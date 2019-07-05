@@ -18,7 +18,9 @@
 
 **LSTM网络结构：**
 
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model.png">
 
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model2.png">
 
 **函数介绍：**
 
@@ -36,11 +38,11 @@
 
 训练集拟合效果：
 
-
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/train.png">
 
 测试集拟合效果：
 
-
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/test.png">
 
 **评估指标：**
 
