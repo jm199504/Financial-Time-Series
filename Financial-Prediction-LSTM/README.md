@@ -18,9 +18,9 @@
 
 **LSTM网络结构：**
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model.png">
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model.png" width="500">
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model2.png">
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-LSTM/images/lstm_model2.png" width="500">
 
 **函数介绍：**
 
