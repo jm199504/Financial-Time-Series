@@ -12,11 +12,11 @@ low 最低价；volume 交易量；label 涨/跌
 
 **卷积过程**
 
-<img src="https://github.com/jm199504/Financial-Prediction-CNN/blob/master/images/conv.gif" width = "500" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-CNN/images/conv.gif" width = "500" />
 
 **最大池化过程**
 
-<img src="https://github.com/jm199504/Financial-Prediction-CNN/blob/master/images/pool.png" width = "500" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-CNN/images/pool.png" width = "500" />
 
 **代码流程**
 
@@ -26,3 +26,7 @@ low 最低价；volume 交易量；label 涨/跌
 4. 数据集分割（训练集和测试集）
 5. 定义卷积神经网络
 6. 评估预测模型
+
+**模型架构**
+
+<img src="<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-CNN/images/model.png" width = "500" />">
