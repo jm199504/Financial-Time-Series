@@ -82,7 +82,7 @@
    
 4.模型输出结果
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-Random-Forest/images/model_pic.jpg">
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-Random-Forest/images/result.png">
 
 5.随机森林参数优化参考表
 
