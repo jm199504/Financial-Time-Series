@@ -4,7 +4,7 @@
 
 **论文流程：**
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-Random-Forest/images/model.png">
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-Random-Forest/images/model.png" width="300">
 
 **算法流程：**
 
@@ -29,10 +29,6 @@
 （2）C4.5: 基于信息增益比=信息增益/特征熵划分层次
 
 （3）CART: 基于Gini划分层次
-
-**随机森林：**
-
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-Random-Forest/images/model_pic.jpg">
 
 基于Bagging集成学习算法，有多棵决策树组成（通常是CART决策树），其主要特性有：
 
