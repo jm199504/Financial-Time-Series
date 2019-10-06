@@ -29,4 +29,4 @@ low 最低价；volume 交易量；label 涨/跌
 
 **模型架构**
 
-<img src="<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-CNN/images/model.png" width = "500" />">
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Prediction-CNN/images/model.png" width = "500" />
