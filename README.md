@@ -6,4 +6,6 @@
 
 **3. Financial-Prediction-Random-Forest**
 
+**4. Financial-Prediction-ARMA**
+
 ****
