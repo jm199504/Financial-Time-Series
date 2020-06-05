@@ -24,7 +24,7 @@
 
 2.3 动态时间规整距离
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw3.png" width = "700" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw3.png" width = "200" />
 
 2.4 伪代码
 
@@ -32,10 +32,10 @@
 
 2.5 动态时间规整距离输出图举例
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw.png" width = "500" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw.png" width = "400" />
 
 2.6 动态时间规整最优匹配对齐
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw2.png" width = "400" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw2.png" width = "350" />
 
 #### 3.cosine similarity
