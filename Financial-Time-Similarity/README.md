@@ -6,36 +6,36 @@
 
 1.2经过对数差处理后的金融时间序列可表示：
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc2.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc2.png" width = "400" />
 
 1.3皮尔逊相关系数计算公式：
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc3.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc3.png" width = "600" />
 
 #### 2.dynamic_time_wrapping
 
 2.1 计算两个金融时间序列的时间点对应数据的欧氏距离
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw1.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw1.png" width = "200" />
 
 2.2 更新时间点对应数据的距离
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw2.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw2.png" width = "500" />
 
 2.3 动态时间规整距离
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw3.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw3.png" width = "700" />
 
 2.4 伪代码
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-alg.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-alg.png" width = "600" />
 
 2.5 动态时间规整距离输出图举例
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw.png" width = "500" />
 
 2.6 动态时间规整最优匹配对齐
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw2.png" width = "300" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw2.png" width = "400" />
 
 #### 3.cosine similarity
