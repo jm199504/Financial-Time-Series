@@ -5,25 +5,7 @@ open 161211.21669504658
 close 161415.73886306392
 high 166077.6958545937
 low 156622.3645795179
-volume 534792857867.38983
-money 8.031354667376045e+17
-labels 0.24921633120707523
-RSI 342.4410943276979
-WR 887.0968155972818
-MACD 213.15834332142552
-OBV 1.4089657816886674e+16
-CCI 12020.87019124043
-PSY 0.019142395692434633
-SMA 160558.54236990534
-AD 1295437963652419.0
-MFI 327.62998298175756
-ROC 0.007725676354565709
-EMA 159222.01050573762
-KD-K 729.0840897147243
-rclose 0.0006354127709005765
-ropen 0.0006904572731694309
-rhigh 0.0005541178799686927
-rlow 0.0005431447361512982
+......
 ```
 
 ### 2.绘制混淆矩阵（confuse_matrix.py）
@@ -48,33 +30,29 @@ rlow 0.0005431447361512982
 
 ### 7.计算分类的评价指标（evaluation.py）
 
-```
-# 准确率Accuracy
-accuracy = (TP+TN) / (TP+TN+FP+FN+0.001)
-# 精确率Precision
-precision = TP / (TP+FP+0.001)
-# 召回率Recall
-recall = TP / (TP+FN+0.001)
-# 特异度Specificity
-specificity = TN / (TN+FP+0.001)
-# 综合评价指标F-measure
-beta = 1
-f_measure = (beta*beta+1)*precision*recall / ((beta*beta)*(precision+recall)+0.001)
-# MCC
-mcc = ((TP*TN)-(FP*FN))/(math.pow((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN),1/2)+1e-10)
-```
+#### （1）准确率Accuracy
+
+#### （2）精确率Precision
+
+#### （3）召回率Recall
+
+#### （4）特异度Specificity
+
+#### （5）综合评价指标F-measure
+
+#### （6）马修斯相关系数MCC(Matthews Correlation Coefficient)
 
 ### 8.窗口数据归一化（normalization.py）
 
-#### 8.1 z-score标准化（std）
+#### （1）z-score标准化（std）
 
-#### 8.2 最大最小归一化（maxmin）
+#### （2）最大最小归一化（maxmin）
 
 ### 9.股票数据下载（download.py）
 
-#### 9.1 tushare接口
+#### （1）tushare接口
 
-#### 9.2JQdata接口
+#### （2）JQdata接口
 
 
 
