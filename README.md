@@ -8,6 +8,8 @@
 
 #### （4）Financial-Prediction-ARMA（自回归滑动平均模型）
 
+
+
 ### 2.Financial-Time-Similarity——金融时间序列相似度计算
 
 #### （1）pearson_correlation_coefficient（皮尔逊相关系数）
@@ -15,6 +17,8 @@
 #### （2）dynamic_time_wrapping（动态时间规整）
 
 #### （3）cosine similarity（余弦相似度）
+
+
 
 ### 3.Finance-Time-Others——金融时间序列（其他）
 
@@ -29,6 +33,14 @@
 #### （5）result_plot.py（绘制预测模型性能——折线图）
 
 #### （6）similarity_time_series.py（相似金融时间序列绘制）
+
+#### （7）evaluation.py（计算分类的评价指标）
+
+#### （8）normalization.py（窗口数据归一化）
+
+#### （9）download.py（股票数据下载）
+
+
 
 ****
 
