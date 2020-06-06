@@ -1,4 +1,4 @@
-#### 1.pearson_correlation_coefficient
+#### 1.皮尔逊相关系数（ pearson_correlation_coefficient）
 
 1.1 由于不同股票价格范围差距过大，在进行股票时间序列相似度匹配过程中通常考虑对数差处理，其公式如下所示：
 
@@ -12,7 +12,17 @@
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc3.png" width = "600" />
 
-#### 2.dynamic_time_wrapping
+1.4结果
+
+1.4.1相关性较强
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc-result1.png" width = "300" />
+
+1.4.2相关性较弱
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/pcc-result2.png" width = "300" />
+
+#### 2.动态时间规整（dynamic_time_wrapping）
 
 2.1 计算两个金融时间序列的时间点对应数据的欧氏距离
 
@@ -38,4 +48,14 @@
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-draw2.png" width = "350" />
 
-#### 3.cosine similarity
+2.7结果
+
+2.7.1动态时间规整距离较短
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-result1.png" width = "300" />
+
+2.7.1动态时间规整距离较长
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Similarity/images/dtw-result2.png" width = "300" />
+
+#### 3.余弦相似度（cosine similarity）
