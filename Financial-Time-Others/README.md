@@ -1,3 +1,5 @@
+数据可参考：[Financial-Time-Similarity(https://github.com/jm199504/Financial-Prediction/tree/master/Financial-Time-Similarity)中
+
 ### 1.计算特征方差（calc_variance.py）
 
 > 示例数据对应的结果输出
