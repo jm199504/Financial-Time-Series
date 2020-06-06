@@ -1,8 +1,4 @@
-数据可参考：[Financial-Time-Similarity(https://github.com/jm199504/Financial-Prediction/tree/master/Financial-Time-Similarity)中
-
 ### 1.计算特征方差（calc_variance.py）
-
-> 示例数据对应的结果输出
 
 ```
 open 161211.21669504658
@@ -49,3 +45,36 @@ rlow 0.0005431447361512982
 ### 6.相似金融时间序列绘制（similarity_time_series.py）
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/sim.png" width = "300" />
+
+### 7.计算分类的评价指标（evaluation.py）
+
+```
+# 准确率Accuracy
+accuracy = (TP+TN) / (TP+TN+FP+FN+0.001)
+# 精确率Precision
+precision = TP / (TP+FP+0.001)
+# 召回率Recall
+recall = TP / (TP+FN+0.001)
+# 特异度Specificity
+specificity = TN / (TN+FP+0.001)
+# 综合评价指标F-measure
+beta = 1
+f_measure = (beta*beta+1)*precision*recall / ((beta*beta)*(precision+recall)+0.001)
+# MCC
+mcc = ((TP*TN)-(FP*FN))/(math.pow((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN),1/2)+1e-10)
+```
+
+### 8.窗口数据归一化（normalization.py）
+
+#### 8.1 z-score标准化（std）
+
+#### 8.2 最大最小归一化（maxmin）
+
+### 9.股票数据下载（download.py）
+
+#### 9.1 tushare接口
+
+#### 9.2JQdata接口
+
+
+
