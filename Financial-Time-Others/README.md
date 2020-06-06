@@ -18,7 +18,7 @@ low 156622.3645795179
 
 ### 4.绘制预测模型性能——柱状图（result_bar.py）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/bar.png" width = "500" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/bar.png" width = "700" />
 
 ### 5.绘制预测模型性能——折线图（result_plot.py）
 
