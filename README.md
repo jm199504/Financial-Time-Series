@@ -40,7 +40,9 @@
 
 #### （9）download.py（股票数据下载）
 
+#### （10）roc.py（roc曲线绘制）
 
+#### （11）confusion_matrix.py（混淆矩阵绘制）
 
 ****
 

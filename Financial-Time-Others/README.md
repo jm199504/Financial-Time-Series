@@ -54,5 +54,11 @@ low 156622.3645795179
 
 #### （2）JQdata接口
 
+### 10.roc曲线绘制（roc.py）
 
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/roc.png" width = "500" />
+
+### 11.混淆矩阵绘制（confusion_matrix.py）
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/cm.png" width = "500" />
 
