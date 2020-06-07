@@ -62,3 +62,7 @@ low 156622.3645795179
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/cm.png" width = "500" />
 
+### 12.卡尔曼滤波（kalmanfilter.py）
+
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/kf.png" width = "500" />
+
