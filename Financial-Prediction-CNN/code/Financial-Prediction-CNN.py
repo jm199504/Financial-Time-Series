@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 np.random.seed(1337)
 
 # load stock data
-df = pd.read_csv('stock.csv')
+df = pd.read_csv('../data/stock.csv')
 
 # normalization
 scaler = MinMaxScaler(feature_range=(0, 1))

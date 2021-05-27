@@ -5,8 +5,8 @@ import numpy as np
 plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
 plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 length = 20
-stock1 = pd.read_csv('000001.XSHE.csv').close[:length]
-stock2 = pd.read_csv('000063.XSHE.csv').close[:length]
+stock1 = pd.read_csv('../data/000001.XSHE.csv').close[:length]
+stock2 = pd.read_csv('../data/000063.XSHE.csv').close[:length]
 plt.figure()
 ax = plt.subplot(2,1,1)
 plt.plot(np.arange(len(stock1)),list(stock1),color='blue',label='股票1')

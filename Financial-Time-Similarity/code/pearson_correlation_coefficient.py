@@ -4,7 +4,7 @@ from scipy.stats import pearsonr
 
 # 计算股票间的对数收益时间序列间的皮尔逊相关系数
 
-path1,path2 = "000001.XSHE.csv","000063.XSHE.csv",
+path1, path2 = "000001.XSHE.csv","000063.XSHE.csv",
 feature = "rclose"
 length = 20
 

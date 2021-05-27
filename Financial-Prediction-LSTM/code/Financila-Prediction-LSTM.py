@@ -23,8 +23,9 @@ def generate_label(data_path):
     df.drop(df.index[-1], inplace=True)
     df.to_csv('temp.csv', index=None)
 
+
 # 生成训练和测试数据
-def generate_model_data(data_path,alpha,days):
+def generate_model_data(data_path, alpha, days):
     df = pd.read_csv(data_path)
     train_day = int((len(df['close']) - days + 1))
     for property in ['open', 'close', 'high', 'low', 'volume','next_close']:
@@ -37,20 +38,22 @@ def generate_model_data(data_path,alpha,days):
             for m in ['open', 'close', 'high', 'low', 'volume']:
                 X_data.append(df[m][i + j])
     X_data = np.reshape(np.array(X_data),(-1,5*15))# 5表示特征数量*天数
-    train_length = int(len(Y_data)* alpha)
-    X_train = np.reshape(np.array(X_data[:train_length]),(len(X_data[:train_length]),days,5))
-    X_test = np.reshape(np.array(X_data[train_length:]),(len(X_data[train_length:]),days,5))
+    train_length = int(len(Y_data) * alpha)
+    X_train = np.reshape(np.array(X_data[:train_length]),(len(X_data[:train_length]), days, 5))
+    X_test = np.reshape(np.array(X_data[train_length:]),(len(X_data[train_length:]), days, 5))
     Y_train,Y_test = np.array(Y_data[:train_length]),np.array(Y_data[train_length:])
     return X_train,Y_train,X_test,Y_test
 
-def calc_MAPE(real,predict):
+
+def calc_MAPE(real, predict):
     Score_MAPE = 0
     for i in range(len(predict[:, 0])):
         Score_MAPE += abs((predict[:, 0][i] - real[:, 0][i]) / real[:, 0][i])
     Score_MAPE = Score_MAPE * 100 / len(predict[:, 0])
     return Score_MAPE
 
-def calc_AMAPE(real,predict):
+
+def calc_AMAPE(real, predict):
     Score_AMAPE = 0
     Score_MAPE_DIV = sum(real[:, 0]) / len(real[:, 0])
     for i in range(len(predict[:, 0])):
@@ -58,12 +61,14 @@ def calc_AMAPE(real,predict):
     Score_AMAPE = Score_AMAPE * 100 / len(predict[:, 0])
     return Score_AMAPE
 
-def evaluate(real,predict):
+
+def evaluate(real, predict):
     RMSE = math.sqrt(mean_squared_error(real[:, 0], predict[:, 0]))
     MAE = mean_absolute_error(real[:, 0], predict[:, 0])
     MAPE = calc_MAPE(real, predict)
     AMAPE = calc_AMAPE(real, predict)
-    return RMSE,MAE,MAPE,AMAPE
+    return RMSE, MAE, MAPE, AMAPE
+
 
 def lstm_model(X_train, Y_train, X_test, Y_test):
     model = Sequential()
@@ -81,8 +86,10 @@ def lstm_model(X_train, Y_train, X_test, Y_test):
     Y_test = scaler.inverse_transform(np.reshape(Y_test, (-1, 1)))
 
     return Y_train, trainPredict, Y_test, testPredict
+
+
 if __name__=='__main__':
-    data_path = 'hs300.csv'
+    data_path = '../data/stock.csv'
     days = 15
     alpha = 0.8
     generate_label(data_path)
@@ -100,5 +107,5 @@ if __name__=='__main__':
     plt.title('test data')
     plt.show()
     
-    RMSE,MAE,MAPE,AMAPE = evaluate(test_Y,testPredict)
-    print(RMSE,MAE,MAPE,AMAPE)
+    RMSE, MAE, MAPE, AMAPE = evaluate(test_Y, testPredict)
+    print(RMSE, MAE, MAPE, AMAPE)

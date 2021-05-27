@@ -16,7 +16,7 @@ actual = [23]*100
 sim = actual + np.random.normal(0,1,100)
 state_means, state_covariance = kf.filter(sim)
 
-plt.plot(actual,'r-')
-plt.plot(sim,'k-')
-plt.plot(state_means,'g-')
+plt.plot(actual, 'r-')
+plt.plot(sim, 'k-')
+plt.plot(state_means, 'g-')
 plt.show()

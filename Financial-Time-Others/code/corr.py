@@ -4,7 +4,7 @@ import seaborn as sns
 
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-df = pd.read_csv('000001.XSHE.csv')[:1000]
+df = pd.read_csv('../data/000001.XSHE.csv')[:1000]
 f, ax = plt.subplots(figsize=(14, 10))
 featureslist = list(df.columns)
 

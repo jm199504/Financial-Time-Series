@@ -7,6 +7,7 @@ import tushare as ts
 import talib
 from sklearn import preprocessing
 
+
 # Get the stock data from tushare
 def get_stock_data(code,pred_days):
     df_raw = ts.get_k_data(code)
@@ -21,8 +22,9 @@ def get_stock_data(code,pred_days):
     df_raw['LABEL'] = label
     # del df_raw['date']
     del df_raw['code']
-    df_raw.to_csv('raw_stock.csv',index=None)
+    df_raw.to_csv('raw_stock.csv', index=None)
     return 'raw_stock.csv'
+
 
 def exponential_smoothing(alpha, s):
     s2 = np.zeros(s.shape)
@@ -31,8 +33,9 @@ def exponential_smoothing(alpha, s):
         s2[i] = alpha*float(s[i])+(1-alpha)*float(s2[i-1])
     return s2
 
+
 # preprocess the stock data with exponential_smoothing
-def em_stock_data(pathfile,alpha):
+def em_stock_data(pathfile, alpha):
     df = pd.read_csv(pathfile)
     es_open = pd.DataFrame(exponential_smoothing(alpha,np.array(df['open'])))
     es_close = pd.DataFrame(exponential_smoothing(alpha, np.array(df['close'])))
@@ -41,6 +44,7 @@ def em_stock_data(pathfile,alpha):
     df['open'],df['close'],df['high'],df['low'] = es_open,es_close,es_high,es_low
     df.to_csv('em_stock.csv',index=None)
     return str('em_stock.csv')
+
 
 # preprocess the stock data with calc_technical_indicators
 def calc_technical_indicators(filepath):
@@ -87,8 +91,9 @@ def calc_technical_indicators(filepath):
     df.to_csv('final_stock.csv',index=None)
     return 'final_stock.csv'
 
+
 # preprocess the stock data with normalization and split data
-def normalization(filepath,pred_days):
+def normalization(filepath, pred_days):
     df= pd.read_csv(filepath)
     df = df[36:(len(df['volume']) - pred_days)]
     features = list(df.T.index)
@@ -103,12 +108,13 @@ def normalization(filepath,pred_days):
     df_train = df[:int(df_len * 0.8)]
     df_valid = df[int(df_len * 0.8):int(df_len * 0.9)]
     df_test = df[int(df_len * 0.9):]
-    df_train.to_csv('train.csv',index=None)
-    df_valid.to_csv('valid.csv',index=None)
-    df_test.to_csv('test.csv',index=None)
-    return 'train.csv','valid.csv','test.csv',features
+    df_train.to_csv('train.csv', index=None)
+    df_valid.to_csv('valid.csv', index=None)
+    df_test.to_csv('test.csv', index=None)
+    return 'train.csv', 'valid.csv', 'test.csv', features
 
-def random_forest_model(train_filepath,valid_filepath,test_filepath,features):
+
+def random_forest_model(train_filepath, valid_filepath, test_filepath, features):
     df_train = pd.read_csv(train_filepath)
     df_valid = pd.read_csv(valid_filepath)
     df_test = pd.read_csv(test_filepath)
@@ -119,6 +125,7 @@ def random_forest_model(train_filepath,valid_filepath,test_filepath,features):
     pred_accuracy = (df_valid['LABEL'] == predict).mean()
     return pred_accuracy,features_degree
 
+
 if __name__=='__main__':
     warnings.filterwarnings(action='ignore', category=DeprecationWarning)
     code = '600585'
@@ -126,8 +133,6 @@ if __name__=='__main__':
     raw_filepath = get_stock_data(code=code, pred_days=pred_days)
     em_filepath = em_stock_data(pathfile=raw_filepath, alpha=0.1)
     final_filepath = calc_technical_indicators(filepath=em_filepath)
-    train_filepath, valid_filepath, test_filepath,features = normalization(final_filepath,pred_days=pred_days)
-    pred_accuracy,features= random_forest_model(train_filepath,valid_filepath,test_filepath,features)
+    train_filepath, valid_filepath, test_filepath, features = normalization(final_filepath,pred_days=pred_days)
+    pred_accuracy, features = random_forest_model(train_filepath, valid_filepath, test_filepath, features)
     print(pred_accuracy)
-    
-    
