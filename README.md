@@ -1,7 +1,7 @@
 ## 金融数据预测/相似度/数据处理
 
-![author](https://img.shields.io/static/v1?label=Author&message=junmingguo&color=green)    ![language](https://img.shields.io/static/v1?label=Language&message=python3&color=orange)
-[!topics](https://img.shields.io/static/v1?label=Language&message=financial-time-data&color=blue)
+![author](https://img.shields.io/static/v1?label=Author&message=junmingguo&color=green)    ![language](https://img.shields.io/static/v1?label=Language&message=python3&color=orange)   
+![topics](https://img.shields.io/static/v1?label=Language&message=financial-time-data&color=blue)
 
 
 ### 1. Financial-Prediction-Methods（金融时间序列预测方法）
