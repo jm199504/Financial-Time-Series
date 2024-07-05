@@ -8,18 +8,23 @@
 
 - 1.1 Financial-Prediction-CNN（卷积神经网络）
 
-* 1.2 Financial-Prediction-LSTM（长短期记忆神经网络）
-* 1.3 Financial-Prediction-Random-Forest（随机森林）
-* 1.4 Financial-Prediction-ARMA（自回归滑动平均模型）
+- 1.2 Financial-Prediction-LSTM（长短期记忆神经网络）
+
+- 1.3 Financial-Prediction-Random-Forest（随机森林）
+
+- 1.4 Financial-Prediction-ARMA（自回归滑动平均模型）
 
 ---
 
 ### 2. Financial-Time-Similarity（金融时间序列相似度计算）
 
-* 2.1 pearson_correlation_coefficient（皮尔逊相关系数）
-* 2.2 dynamic_time_wrapping（动态时间规整）
-* 2.3 cosine similarity（余弦相似度）
-* 2.4 similarity_time_series.py（相似金融时间序列绘制）
+- 2.1 pearson_correlation_coefficient（皮尔逊相关系数）
+
+- 2.2 dynamic_time_wrapping（动态时间规整）
+
+- 2.3 cosine similarity（余弦相似度）
+
+- 2.4 similarity_time_series.py（相似金融时间序列绘制）
 
 ---
 
@@ -46,8 +51,11 @@
 - 3.10 confusion_matrix.py（混淆矩阵绘制）
 
 - 3.11 kalmanfilter.py（卡尔曼滤波）
+
 - 3.12 candle.py（生成蜡烛图）
+
 - 3.13 calc_technical_indicators_formula.py（基于公式计算技术指标）
+
 - 3.14 calc_technical_indicators_TA_LIB.py（基于TA_LIB库计算技术指标）
 
 ****
