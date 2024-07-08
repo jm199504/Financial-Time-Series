@@ -1,10 +1,10 @@
-## 金融时间序列（数据预测 / 相似度 / 数据处理）
+### 金融时间序列（数据预测 / 相似度 / 数据处理）
 
 ![author](https://img.shields.io/static/v1?label=Author&message=junmingguo&color=green)
 ![language](https://img.shields.io/static/v1?label=Language&message=python3&color=orange) ![topics](https://img.shields.io/static/v1?label=Topics&message=financial-time-series&color=blue)
 
 
-### 1. Financial-Prediction-Methods（金融时间序列预测方法）
+#### 1. Financial-Prediction-Methods（金融时间序列预测方法）
 
 - 1.1 Financial-Prediction-CNN（卷积神经网络）
 
@@ -16,7 +16,7 @@
 
 ---
 
-### 2. Financial-Time-Similarity（金融时间序列相似度计算）
+#### 2. Financial-Time-Similarity（金融时间序列相似度计算）
 
 - 2.1 pearson_correlation_coefficient（皮尔逊相关系数）
 
@@ -28,7 +28,7 @@
 
 ---
 
-### 3. Finance-Time-Others（金融时间序列其他处理）
+#### 3. Finance-Time-Others（金融时间序列其他处理）
 
 - 3.1 calc_variance.py（计算特征方差）
 
@@ -59,4 +59,12 @@
 - 3.14 calc_technical_indicators_TA_LIB.py（基于TA_LIB库计算技术指标）
 
 ****
+
+#### 4. Financial-Candle-Picture（金融蜡烛图）
+
+基于`mpl_finance`和`matplotlib`库实现将股价转为蜡烛图，效果预览：
+
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/images/002253_0_01.png?raw=true)
+
+---
 
