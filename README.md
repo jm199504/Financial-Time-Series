@@ -64,7 +64,7 @@
 
 基于`mpl_finance`和`matplotlib`库实现将股价转为蜡烛图，效果预览：
 
-![](https://github.com/jm199504/Financial-Time-Series/blob/master/images/002253_0_01.png?raw=true)
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/Financial-Candle-Picture/train_pic/002253_0_01.png?raw=true)
 
 ---
 
