@@ -14,6 +14,14 @@
 
 - 1.4 Financial-Prediction-ARMA（自回归滑动平均模型）
 
+- 1.5 Financial-Prediction-ARIMA（自回归积分移动平均模型）
+
+- 1.6 Financial-Prediction-Muiti-Input-Conv1D（多输入Conv1D模型）
+
+- 1.7 Financial-Prediction-2DCNN（2D卷积神经网络）
+
+- 1.8 Financial-Prediction-3DCNN（3D卷积神经网络）
+
 ---
 
 #### 2. Financial-Time-Similarity（金融时间序列相似度计算）
