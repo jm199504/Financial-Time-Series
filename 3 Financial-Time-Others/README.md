@@ -30,18 +30,17 @@
 - 3.7 normalization.py（窗口数据归一化）
   - z-score标准化（std）
   - 最大最小归一化（maxmin）
-- 3.8 download_data.py（股票数据下载 from tushare）
-- 3.9 roc.py（roc曲线绘制）
+- 3.8 roc.py（roc曲线绘制）
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/roc.png" width = "500" />
 
-- 3.10 confusion_matrix.py（混淆矩阵绘制）
+- 3.9 confusion_matrix.py（混淆矩阵绘制）
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/cm.png" width = "500" />
 
-- 3.11 kalmanfilter.py（卡尔曼滤波）
+- 3.10 kalmanfilter.py（卡尔曼滤波）
 
 <img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/kf.png" width = "500" />
 
-- 3.12 calc_technical_indicators_formula.py（基于公式计算技术指标）
-- 3.13 calc_technical_indicators_TA_LIB.py（基于TA_LIB库计算技术指标）
+- 3.11 calc_technical_indicators_formula.py（基于公式计算技术指标）
+- 3.12 calc_technical_indicators_TA_LIB.py（基于TA_LIB库计算技术指标）
