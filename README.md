@@ -41,19 +41,19 @@
 - 3.1 calc_variance.py（计算特征方差）
 - 3.2 confuse_matrix.py（绘制混淆矩阵）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/matrix.png" width = "500" />
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/matrix.png?raw=true)
 
 - 3.3 corr.py（特征间相关性）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/corr.png" width = "500" />
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/corr.png?raw=true)
 
 - 3.4 result_bar.py（绘制预测模型性能——柱状图）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/bar.png" width = "700" />
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/bar.png?raw=true)
 
 - 3.5 result_plot.py（绘制预测模型性能——折线图）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/plot.png" width = "500" />
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/plot.png?raw=true)
 
 - 3.6 evaluation.py（计算分类的评价指标）
 
@@ -67,17 +67,17 @@
 - 3.7 normalization.py（窗口数据归一化）
   - z-score标准化（std）
   - 最大最小归一化（maxmin）
-- 3. 8roc.py（roc曲线绘制）
+- 3.8 roc.py（roc曲线绘制）
 
 ![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/roc.png?raw=true)
 
 - 3.9 confusion_matrix.py（混淆矩阵绘制）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/3%20Financial-Time-Others/images/cm.png" width = "500" />
+![](https://github.com/jm199504/Financial-Prediction/blob/master/3%20Financial-Time-Others/images/cm.png?raw=true)
 
 - 3.10 kalmanfilter.py（卡尔曼滤波）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/kf.png" width = "500" />
+![](https://github.com/jm199504/Financial-Prediction/blob/master/3%20Financial-Time-Others/images/kf.png?raw=true)
 
 - 3.11 calc_technical_indicators_formula.py（基于公式计算技术指标）
 - 3.12 calc_technical_indicators_TA_LIB.py（基于TA_LIB库计算技术指标）
@@ -88,7 +88,7 @@
 
 基于`mpl_finance`和`matplotlib`库实现将股价转为蜡烛图，效果预览：
 
-<img src="https://github.com/jm199504/Financial-Time-Series/blob/master/Financial-Candle-Picture/train_pic/002253_0_01.png" width = "200" />
+![](https://github.com/jm199504/Financial-Prediction/blob/master/3%20Financial-Time-Others/images/002253_0_01.png?raw=true)
 
 ---
 
