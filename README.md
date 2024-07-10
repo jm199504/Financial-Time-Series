@@ -69,11 +69,11 @@
   - 最大最小归一化（maxmin）
 - 3. 8roc.py（roc曲线绘制）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/roc.png" width = "500" />
+![](https://github.com/jm199504/Financial-Time-Series/blob/master/3%20Financial-Time-Others/images/roc.png?raw=true)
 
 - 3.9 confusion_matrix.py（混淆矩阵绘制）
 
-<img src="https://github.com/jm199504/Financial-Prediction/blob/master/Financial-Time-Others/images/cm.png" width = "500" />
+<img src="https://github.com/jm199504/Financial-Prediction/blob/master/3%20Financial-Time-Others/images/cm.png" width = "500" />
 
 - 3.10 kalmanfilter.py（卡尔曼滤波）
 
